@@ -1,4 +1,6 @@
-;;; my emacs init file
+;;; package -- summary
+;;; Commentary:  my emacs init file
+;;; Code:
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milbox.net/packages/"))
@@ -26,7 +28,8 @@
 (require 'cl)
 (require 'evil)
 (evil-mode 1)
-
+(setq linum-format "%d ")
+(global-linum-mode t)
 (require 'evil-surround)
 (global-evil-surround-mode 1)
 
